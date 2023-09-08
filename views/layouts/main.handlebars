@@ -1,0 +1,30 @@
+<!-- handlebars for main page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- if user login confirmed, post option and blogs will be displayed, otherwise user will be prompted to signup or login-->
+    <header id="navheader" class="text-white">
+        <section></section>
+        {{#if loggedIn}} 
+            <a href="/dashboard">add post</a>
+            <a href="/">View Blogs</a>
+            <a href="/api/users/logout">Logout</a>
+        {{else}}
+            <a href="/">Home</a>
+            <a href="/dashboard">Nav</a>
+            <a href="/login">Login</a>
+        {{/if}}  
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!-- handlebars for homepage displays -->
+<h1>Tech Blog</h1>
+{{#each blogs}}
+  <section class="card">
+    <a href="/blogs/{{id}}" class="card-text">
+        <h4 class="card-title">{{title}}</h4> 
+        <h6> {{user.username}} on {{createdAt}}</h6>
+        <p class="card-text">{{content}}</p>
+    </a>
+  </section>
+{{/each}}

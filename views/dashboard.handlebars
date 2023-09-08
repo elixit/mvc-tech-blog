@@ -1,0 +1,33 @@
+<!-- view page for dashboard handlebar displays blogs, users, and date created-->
+<h1>Dashboard</h1>
+<section id="existingblogs">
+{{#each blogs}}
+  <section class="card">
+      <a href="/blogs/{{id}}" class="card-text">
+        <h3 class="card-title">{{title}}</h3> 
+        <h4>Posted on {{createdAt}}</h4>
+        <p class="card-text">{{content}}</p>
+    </a>
+  </section>
+{{/each}}
+</section>
+<section id="createNew" class="card text-center">
+  <div class="card-text">
+  <h3 class="card-title">Create New Post</h3>
+  <form id="newUpload">
+    <div class="card-text"></div>
+      <label for="title">Title</label><br>
+      <input type="text" id="title" placeholder="title">
+    </div>
+    <div class="card-text"></div>
+      <label for="content">Content</label>
+    <textarea id="content" placeholder="content"></textarea>
+    </div>
+    <button id="create">Create</button>
+</form>
+</div>
+</section>
+<form id="newpost">
+    <button>add post</button>
+</form>
+<script src="/javascript/dashboard.js"></script>

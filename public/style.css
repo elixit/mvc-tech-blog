@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+button {
+    padding: 3px;
+    margin: 5px;
+}
+
+#newpost {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#content, #editedContent {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#create, #update, #delete {
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top:30px;
+}
+
+#comment {
+width: 70vw;
+margin-top:20px;
+}
+
+#title, #editedTitle {
+    width: 70vw;
+}
+

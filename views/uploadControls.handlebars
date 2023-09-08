@@ -1,0 +1,33 @@
+<!-- handlebars for post deletion/ed-->
+
+<h1>Dashboard</h1>
+<section id="currentUploadUpdate">
+  <section class="card">
+      <div class="card-body">
+        <h3 class="card-title">{{handlebarsUpload.title}}</h3> 
+        <h5>Date Posted : {{handlebarsUpload.createdAt}}</h5>
+        <p class="card-text">{{handlebarsUpload.content}}</p>
+    </div>
+  </section>
+</section>
+
+<section id="editUpload" class="card text-center">
+  <div class="card-body">
+  <h3 class="card-title">Edit Post</h3>
+  <form id="editedUpload">
+    <div class="card-text"></div>
+      <label for="editedTitle">Title</label><br>
+      <input type="text" id="editedTitle" placeholder="{{handlebarsUpload.title}}" value="{{handlebarsUpload.title}}">
+    </div>
+    <div class="card-text"></div>
+      <label for="editedContent">Content</label>
+    <textarea id="editedContent">{{handlebarsUpload.content}}</textarea>
+    <input id="hiddenUploadId" hidden="true" value="{{handlebarsUpload.id}}"></input>
+    </div>
+    <button id="update">Update</button>
+    <button id="delete">Delete</button>
+</form>
+</div>
+</section>
+
+<script src="/javascript/uploadControls.js"></script>
