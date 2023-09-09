@@ -70,8 +70,10 @@ THEN I am able to view posts and comments but I am prompted to log in again befo
 - mysql2
   
 
-## Screenshot 
+## Link
 
+[
+](https://drive.google.com/file/d/127MhXmdCgkgkCkgbvHFVx6Vpd0bt_D-j/view?usp=drive_link)https://drive.google.com/file/d/127MhXmdCgkgkCkgbvHFVx6Vpd0bt_D-j/view?usp=drive_link
 
 
 
